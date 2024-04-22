@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----Header----*/
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    z-index: 1;
+}
+
+header img{
+    width: 110px;
+    height: 110px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin-top: 10px;
+    padding: 0px 5px 0px 5px;
+    border-block-end: 2px #c69b7c solid;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav ul li a:hover{
+    color: #c69b7c;
+}
+
+/*----Seccion banner----*/
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.banner div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 46, 44, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner div p{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.banner div h2{
+    font-size: 35px;
+    color: white;
+    border: 2px solid beige;
+    background-color: rgb(245, 245, 220, 0.3);
+    padding: 20px;
+}
+
+.banner div a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    background-color: rgb(230, 230, 230, 0.47);
+    border-radius: 20px;
+    border: 2px solid beige;
+    margin-top: 35px;
+}
+.banner div a:hover{
+    background-color: rgb(288, 88, 158, .47);
+}
+
+/*---h2---*/
+h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+/*----Seccion nosotros----*/
+.nos{
+    background-color: #f1e5de;
+    height: 50vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.nos div{
+    width: 48%;
+    text-align: center;
+}
+
+.nos div h3{
+    margin: 20px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+}
+
+/*----Seccion productos----*/
+.prod{
+    height: 50vh;
+    display: flex; /*lo hacemos flexible*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod div{
+    border: 2px;
+    width: 250px;
+    height: 280px;
+    text-align: center;
+}
+
+.prod div img{
+    width: 250px;
+    height: 250px;
+}
+.prod a{
+    text-decoration: none;
+    color: #7a7a7a;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.prod a:hover{
+    color: #c69b7c;
+}
+.prod div img:hover{
+    box-shadow: -1px 10px 42px -14px #c69b7c;
+    -webkit-box-shadow: -1px 10px 42px -14px #c69b7c;
+    -moz-box-shadow: -1px 10px 42px -14px #c69b7c;
+}
+
+
+/*----Grid----*/
+.grid-galeria{
+width: 100%;
+margin-top: 15px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 250px;
+gap: 15px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -1px 10px 42px -14px rgb(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -14px rgb(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -14px rgb(0, 0, 0, 0.75);
+}   
+
+.grid-item{
+    position: relative;
+}
+
+.grid-item h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100%;
+    padding-left: 10px;
+}
+
+.img-1{
+    grid-row: span 2;
+}
+.img-2{
+    grid-column: span 2;
+}
+.img-5{
+    grid-column: span 2;
+}
+.img-4{
+    grid-row: span 2;
+}
+
+.fixed img{
+    width: 70px;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+}
+
+/*----Footer----*/
+footer{
+    background-color: #f1e5de;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer div img{
+    width: 110px;
+    height: 110px;
+}
+.media img{
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+/*----Humano----*/
+.humano{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.humano div{
+    border: 2px black solid;
+    width: 254px;
+    height: 350px;
+    text-align: center;
+}
+.humano div img{
+    width: 250px;
+    height: 250px;
+}
+.humano div a{
+    background-color: #c69b7c;
+    text-decoration: none;
+    color: beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.humano div a:hover{
+    color: #552b07bb;
+    border:2px #552b0725 solid ;
+}
+.humano div:hover{
+    box-shadow: -1px 10px 42px -14px #c69b7c;
+    -webkit-box-shadow: -1px 10px 42px -14px #c69b7c;
+    -moz-box-shadow: -1px 10px 42px -14px #c69b7c;
+}
+.humano div h3{
+    margin-bottom: 20px;
+}
+
+/*----Mascota----*/
+/*.mascota{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mascota div{
+    border: 2px gray solid;
+    width: 254px;
+    height: 350px;
+    text-align: center;
+    margin: 30px 80px 0px 80px ;
+    display: inline-block;
+}
+.mascota div img{
+    width: 250px;
+    height: 250px;
+}
+.mascota div a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.mascota div h3{
+    margin-bottom: 20px;
+}
+.mascota h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+}
+*/
+.mascota{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mascota div{
+    border: 2px black solid;
+    width: 254px;
+    height: 350px;
+    text-align: center;
+}
+.mascota div img{
+    width: 250px;
+    height: 250px;
+}
+.mascota div a{
+    background-color: #c69b7c;
+    text-decoration: none;
+    color: beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.mascota div a:hover{
+    color: #552b07bb;
+    border:2px #552b0725 solid ;
+}
+.mascota div:hover{
+    box-shadow: -1px 10px 42px -14px #c69b7c;
+    -webkit-box-shadow: -1px 10px 42px -14px #c69b7c;
+    -moz-box-shadow: -1px 10px 42px -14px #c69b7c;
+}
+.mascota div h3{
+    margin-bottom: 20px;
+}
+/*----Combos----*/
+.combo{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.combo div{
+    border: 2px black solid;
+    width: 254px;
+    height: 350px;
+    text-align: center;
+}
+.combo div img{
+    width: 250px;
+    height: 250px;
+}
+.combo div a{
+    background-color: #c69b7c;
+    text-decoration: none;
+    color: beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.combo div a:hover{
+    color: #552b07bb;
+    border:2px #552b0725 solid ;
+}
+.combo div:hover{
+    box-shadow: -1px 10px 42px -14px #c69b7c;
+    -webkit-box-shadow: -1px 10px 42px -14px #c69b7c;
+    -moz-box-shadow: -1px 10px 42px -14px #c69b7c;
+}
+.combo div h3{
+    margin-bottom: 20px;
+}
+
+/*----Formulario----*/
+form{
+    background-color: beige;
+    text-align: justify;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 300px;
+    margin-left: 520px;
+    margin-top: 20px;
+    
+}
+
+.formu h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+form div{
+    margin: 10px;
+}
+
+.mapa{
+    text-align: center;
+    margin: 20px;
+}
+
+/*---media query---*/
+@media screen and (max-width:730px){
+    .nos{
+        flex-direction: column;
+    }
+    .nos div{
+        width: 80%;
+        text-align: center;
+        margin: 50px;
+    }
+}
+@media screen and (max-width:730px){
+    header{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:720px){
+    header{
+        position: static;
+    }
+    header img{
+        width: 90px;
+        height: 90px;
+    
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 0;
+        text-align: center;
+    }
+    header nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:546px){
+    .banner div h2{
+        font-size: 30px;
+        padding: 5px;
+    }
+    .banner div p{
+        font-size: 25px;
+    }
+    .banner div a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:453px){
+    .banner div h2{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .banner div p{
+        font-size: 15px;
+    }
+    .banner div a{
+        font-size: 8px;
+    }
+}
