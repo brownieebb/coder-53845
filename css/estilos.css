@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  z-index: 1; }
+  header a img {
+    width: 110px;
+    height: 110px; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin-top: 10px;
+      padding: 0px 5px 0px 5px;
+      border-block-end: 2px #c69b7c solid; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #7a7a7a;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        header nav ul li a:hover {
+          color: #c69b7c; }
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .banner div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 46, 44, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .banner div p {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px; }
+    .banner div h2 {
+      font-size: 35px;
+      color: white;
+      border: 2px solid beige;
+      background-color: rgba(245, 245, 220, 0.3);
+      padding: 20px; }
+    .banner div a {
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      padding: 10px 50px;
+      background-color: rgba(230, 230, 230, 0.47);
+      border-radius: 20px;
+      border: 2px solid beige;
+      margin-top: 35px; }
+      .banner div a:hover {
+        background-color: rgba(255, 88, 158, 0.47); }
+
+h2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  text-transform: uppercase; }
+
+.nos {
+  background-color: #f1e5de;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nos div {
+    width: 48%;
+    text-align: center; }
+    .nos div h3 {
+      margin: 20px;
+      font-family: sans-serif;
+      text-transform: uppercase; }
+
+.grid-galeria {
+  width: 100%;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -1px 10px 42px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 42px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 42px -14px rgba(0, 0, 0, 0.75); }
+  .grid-galeria .grid-item {
+    position: relative; }
+    .grid-galeria .grid-item h3 {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.521);
+      width: 100%;
+      padding-left: 10px; }
+  .grid-galeria .img-1 {
+    grid-row: span 2; }
+  .grid-galeria .img-2 {
+    grid-column: span 2; }
+  .grid-galeria .img-5 {
+    grid-column: span 2; }
+  .grid-galeria .img-4 {
+    grid-row: span 2; }
+
+.prod {
+  height: 50vh;
+  display: flex;
+  /*lo hacemos flexible*/
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+  .prod a {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .prod a:hover {
+      color: #c69b7c; }
+    .prod a div {
+      border: 2px;
+      width: 250px;
+      height: 280px;
+      text-align: center; }
+      .prod a div img {
+        width: 250px;
+        height: 250px; }
+        .prod a div img:hover {
+          box-shadow: -1px 10px 42px -14px #c69b7c;
+          -webkit-box-shadow: -1px 10px 42px -14px #c69b7c;
+          -moz-box-shadow: -1px 10px 42px -14px #c69b7c; }
+
+.fixed img {
+  width: 70px;
+  position: fixed;
+  bottom: 6px;
+  right: 6px; }
+
+footer {
+  background-color: #f1e5de;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; }
+  footer div img {
+    width: 110px;
+    height: 110px; }
+  footer .media img {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px; }
